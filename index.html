@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Banner</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+    }
+
+    .banner {
+      min-height: 450px;
+      margin: 30px;
+      padding: 60px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #111827, #2563eb, #06b6d4);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner-content {
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(5px);
+    }
+
+    .banner h1 {
+      font-size: 55px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .banner h1 span {
+      color: #67e8f9;
+    }
+
+    .banner p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #e0f2fe;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #1d4ed8;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.5);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* Decorative circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .circle-one {
+      width: 300px;
+      height: 300px;
+      right: -80px;
+      top: -100px;
+    }
+
+    .circle-two {
+      width: 200px;
+      height: 200px;
+      right: 150px;
+      bottom: -100px;
+    }
+
+    .banner-image {
+      width: 350px;
+      height: 300px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .banner {
+        margin: 15px;
+        padding: 40px 25px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .banner h1 {
+        font-size: 38px;
+      }
+
+      .banner p {
+        font-size: 16px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .banner-image {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="banner">
+
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+
+    <div class="banner-content">
+      <div class="badge">✨ Welcome to Our Website</div>
+
+      <h1>
+        Build Something <span>Amazing</span>
+      </h1>
+
+      <p>
+        Create beautiful, modern and responsive websites
+        that make your brand stand out from the crowd.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">Get Started →</a>
+        <a href="#" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+
+    <div class="banner-image">
+      🚀
+    </div>
+
+  </section>
+
+</body>
+</html>
