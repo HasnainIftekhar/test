@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: studentportal 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: studentportal
+  template:
+    metadata:
+      labels:
+        app: studentportal 
+    spec:
+      containers:
+        - name: studentportal 
+          image: myappacr1234.azurecr.io/studentportal
+          ports:
+          - containerPort: 80
